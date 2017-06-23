@@ -1,0 +1,90 @@
+body {
+	width: 350px;
+	height: 580px;
+	margin: 0 0;
+	font-family: Arial, Helvetica, sans-serif;	
+}
+
+.nav-header {
+	width: 100%;
+	height: 30px;
+	background-color: #46c6f5;
+	padding: 20px 50px;
+}
+
+.nav-icon {
+	margin-right: 80px;
+}
+
+.nav-icon:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.notes-area {
+	width: 100%;
+	height: calc(100% - 50px);
+	background-color: #eef4f9;
+	text-align: center;
+	padding: auto 100px;
+}
+
+.img-notes {
+	padding-top: 120px;
+}
+
+.add-btn {
+	position: absolute;
+	z-index: 10;
+	bottom: 0;
+	right: 0;
+}
+
+p {
+	font-size: 16px;
+}
+
+.title-label {
+	font-weight: bold;
+}
+
+.content-label {	
+	line-height: 1.3em;
+}
+
+button {
+	width: 150px;
+	height: 50px;
+	background-color: #fff;
+	border-radius: 50px;
+	position: absolute;
+	padding: 10px 10px;
+	display: flex;
+	align-items: center;
+	bottom: 15px;
+	border: none;
+	outline: none;
+	box-shadow: 0 0 10px gray;
+}
+
+button:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+#start-discussion {
+	left: 15px;
+}
+
+#add-portal {
+	right: 15px;
+}
+
+.btn-in-icon {
+	margin-right: 10px;
+}
+
+button > p {
+	font-size: 14px;
+	margin: 0;
+}

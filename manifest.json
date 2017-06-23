@@ -1,0 +1,42 @@
+{
+  "manifest_version": 2,
+
+  "name": "GO1",
+  "description": "",
+  "version": "0.1",
+
+  "browser_action": {
+    "default_icon": "images/icon_go1.png",
+    "default_popup": "html/index.html"
+  },
+
+  "background": {
+    "scripts": ["js/jquery-2.1.3.min.js", "js/background.js"]
+  },
+
+  "content_scripts": [
+        {
+            "run_at": "document_start",
+            "matches": ["*://www.go1.com/*"],
+            "css": ["css/login.css"],
+            "js": ["js/jquery-2.1.3.min.js", "js/login.js"]
+         }
+  ],
+
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "activeTab",
+    "webRequest",
+    "tabs",
+    "unlimitedStorage"  
+  ],
+
+  "web_accessible_resources": [
+    "images/icon_go1.png",
+    "images/icon_default.png",
+    "html/login.html",
+    "js/login.js",
+    "css/login.css"
+  ]
+}
