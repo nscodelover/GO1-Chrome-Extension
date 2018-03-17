@@ -3,6 +3,10 @@ $(document).ready(function() {
         window.location = "../html/nonotes.html";
     });
 
+    $('#notification').click(function(e) {
+        window.location = "../html/notification.html";
+    });
+
     $('#signout').click(function() {
         localStorage.setItem('logined', 'false');
         chrome.browserAction.setIcon({path: '../images/icon_go1.png'});
